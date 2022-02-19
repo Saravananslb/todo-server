@@ -5,7 +5,7 @@ const CONNECTION_STRING = process.env.CONNECTION_STRING || 'mongodb://localhost:
 const connectdb = () => {
     mongoose.connect(CONNECTION_STRING, (error) => {
     if (error) console.log('error in connecting db', error);
-    else console.log('db connected');
+    else console.log('db connected!');
 });
 }
 
